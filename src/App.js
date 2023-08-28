@@ -33,10 +33,10 @@ function App() {
             <div class="carousel-item active">
               <div className="card border shadow pt-4 px-4">
                 <img
-                  className="card-img-top d-block w-100"
+                  className="card-img-top object-fit-md-contain border rounded"
                   src="https://images.unsplash.com/photo-1633058851505-6376593aa34f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
                   alt="Card image cap"
-                  style={{ maxHeight: "50vh", objectPosition: "cover" }}
+                  style={{ height: "50vh", maxHeight: "50vh" }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">Sécurité</h5>
@@ -96,8 +96,8 @@ function App() {
                 )}
 
                 {playingFit && (
-                  <div className="videoPlaying">
-                    <video controls autoPlay width="450" height="300">
+                  <div className="videoPlaying object-fit-cover">
+                    <video controls autoPlay width="100%" height="100%">
                       <source src={fitnessvideo} type="video/mp4" />
                     </video>
                   </div>
