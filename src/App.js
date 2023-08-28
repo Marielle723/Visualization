@@ -96,7 +96,7 @@ function App() {
                 )}
 
                 {playingFit && (
-                  <div className="videoPlaying object-fit-cover">
+                  <div className="videoPlaying object-fit-contain">
                     <video controls autoPlay width="100%" height="100%">
                       <source src={fitnessvideo} type="video/mp4" />
                     </video>
