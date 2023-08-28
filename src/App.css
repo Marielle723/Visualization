@@ -15,10 +15,3 @@
   text-transform: uppercase;
   font-weight: 700;
 }
-.circle {
-  width: 80%;
-  max-width: 960px;
-  height: 98vh;
-
-  border-radius: 50%;
-}

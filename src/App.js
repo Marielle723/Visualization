@@ -3,22 +3,26 @@ import { useState } from "react";
 import play from "./assets/img/play.svg";
 
 import fitness from "./assets/img/fitness.jpg";
-import video from "./assets/video/video.mp4";
+
 import fitnessvideo from "./assets/video/Fitness.mp4";
 
 function App() {
   const [playingFit, setPlayingFit] = useState(false);
-  const [active, setActive] = useState(false);
 
   return (
     <div className="App">
-      <nav class="navbar navbar-light" onScroll={() => setActive(true)}>
+      {/* // Début partie sur le navbar */}
+
+      <nav class="navbar navbar-light">
         <span class="navbar-brand mb-0 h1">
           CREA<span className="span-logo">LIT</span>ECH
         </span>
         <h1 className="span-title">Visualize</h1>
       </nav>
-      <div className="container-md text-center circle">
+
+      {/* //fin partie sur Navbar et début partie sur le carousel */}
+
+      <div className="container-lg text-center">
         <div
           id="carouselExampleControls"
           class="carousel slide"
@@ -29,7 +33,7 @@ function App() {
             <div class="carousel-item active">
               <div className="card border shadow pt-4 px-4">
                 <img
-                  className="card-img-top"
+                  className="card-img-top d-block w-100"
                   src="https://images.unsplash.com/photo-1633058851505-6376593aa34f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
                   alt="Card image cap"
                   style={{ maxHeight: "50vh", objectPosition: "cover" }}
@@ -57,7 +61,7 @@ function App() {
             <div class="carousel-item">
               <div className="card border shadow pt-4 px-4">
                 <img
-                  className="card-img-side"
+                  className="card-img-side d-block w-100"
                   src="https://images.unsplash.com/photo-1506890533526-95e6102ad03d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                   alt="Card image cap"
                   style={{ maxHeight: "50vh", objectPosition: "cover" }}
@@ -84,7 +88,7 @@ function App() {
               <div className="card border shadow pt-4 px-4">
                 {playingFit === false && (
                   <img
-                    className="card-img-side"
+                    className="card-img-side d-block w-100"
                     src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
                     alt="Card image cap"
                     style={{ maxHeight: "50vh", objectPosition: "cover" }}
@@ -136,7 +140,7 @@ function App() {
             <div class="carousel-item">
               <div className="card border shadow pt-4 px-4">
                 <img
-                  className="card-img-top"
+                  className="card-img-top d-block w-100"
                   src="https://media.istockphoto.com/id/1378115720/fr/photo/famille-multiraciale-en-cuisine-exprimant-lamour-et-le-bonheur.webp?b=1&s=170667a&w=0&k=20&c=d0_cdUDezpLGjQpPJir45H0cM2LymTk6t1rybRX6xg4="
                   alt="Card image cap"
                   style={{ maxHeight: "50vh", objectPosition: "cover" }}
