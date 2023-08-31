@@ -106,16 +106,14 @@ function App() {
                 <div className="card-body">
                   <h5 className="card-title">Fitness</h5>
 
-                  {playingFit === false && (
-                    <p className="card-text">
-                      Dans cette ère où le bien-être physique est essentiel, il
-                      est important de se sentir confiant(e) dans sa capacité à
-                      prendre soin de son corps. Cette expérience guidée vous
-                      invite à vous imaginer dans une routine d'activité
-                      physique, à atteindre un poids sain et à apprécier les
-                      bienfaits d'un corps qui fonctionne de manière optimale.
-                    </p>
-                  )}
+                  <p className="card-text">
+                    Dans cette ère où le bien-être physique est essentiel, il
+                    est important de se sentir confiant(e) dans sa capacité à
+                    prendre soin de son corps. Cette expérience guidée vous
+                    invite à vous imaginer dans une routine d'activité physique,
+                    à atteindre un poids sain et à apprécier les bienfaits d'un
+                    corps qui fonctionne de manière optimale.
+                  </p>
 
                   {playingFit === false && (
                     <button
